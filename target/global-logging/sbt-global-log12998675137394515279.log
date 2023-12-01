@@ -1,0 +1,279 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(testOnly singlecycle.toptest, Some(145d88c6-94fd-48f8-a62d-b0d71aea8c5c), Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Test / testOnly[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 56 Scala sources to /home/shehroz/Scala-Chisel-Learning-Journey/target/scala-2.12/classes ...[0m
+[0m[[0m[31merror[0m] [0m[0m/home/shehroz/Scala-Chisel-Learning-Journey/src/main/scala/lab2/Mux1test.scala:3:16: object tester is not a member of package chisel3[0m
+[0m[[0m[31merror[0m] [0m[0mimport chisel3.tester._[0m
+[0m[[0m[31merror[0m] [0m[0m               ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/shehroz/Scala-Chisel-Learning-Journey/src/main/scala/lab2/Mux1test.scala:4:12: object scalatest is not a member of package org[0m
+[0m[[0m[31merror[0m] [0m[0mimport org.scalatest.FreeSpec[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/shehroz/Scala-Chisel-Learning-Journey/src/main/scala/lab2/Mux1test.scala:8:24: not found: type FreeSpec[0m
+[0m[[0m[31merror[0m] [0m[0mclass Mux1test extends FreeSpec with ChiselScalatestTester{[0m
+[0m[[0m[31merror[0m] [0m[0m                       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/shehroz/Scala-Chisel-Learning-Journey/src/main/scala/lab2/Mux1test.scala:8:38: not found: type ChiselScalatestTester[0m
+[0m[[0m[31merror[0m] [0m[0mclass Mux1test extends FreeSpec with ChiselScalatestTester{[0m
+[0m[[0m[31merror[0m] [0m[0m                                     ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/shehroz/Scala-Chisel-Learning-Journey/src/main/scala/lab2/Mux1test.scala:10:14: value in is not a member of String[0m
+[0m[[0m[31merror[0m] [0m[0m"Mux1 test " in{[0m
+[0m[[0m[31merror[0m] [0m[0m             ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/shehroz/Scala-Chisel-Learning-Journey/src/main/scala/lab2/Mux1test.scala:11:1: not found: value test[0m
+[0m[[0m[31merror[0m] [0m[0mtest (new Mux1 ){ a=>[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/shehroz/Scala-Chisel-Learning-Journey/src/main/scala/lab2/barrelshiftertest.scala:4:16: object tester is not a member of package chisel3[0m
+[0m[[0m[31merror[0m] [0m[0mimport chisel3.tester._[0m
+[0m[[0m[31merror[0m] [0m[0m               ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/shehroz/Scala-Chisel-Learning-Journey/src/main/scala/lab2/barrelshiftertest.scala:5:12: object scalatest is not a member of package org[0m
+[0m[[0m[31merror[0m] [0m[0mimport org.scalatest.FreeSpec[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/shehroz/Scala-Chisel-Learning-Journey/src/main/scala/lab2/barrelshiftertest.scala:7:33: not found: type FreeSpec[0m
+[0m[[0m[31merror[0m] [0m[0mclass barrelshiftertest extends FreeSpec with ChiselScalatestTester{[0m
+[0m[[0m[31merror[0m] [0m[0m                                ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/shehroz/Scala-Chisel-Learning-Journey/src/main/scala/lab2/barrelshiftertest.scala:7:47: not found: type ChiselScalatestTester[0m
+[0m[[0m[31merror[0m] [0m[0mclass barrelshiftertest extends FreeSpec with ChiselScalatestTester{[0m
+[0m[[0m[31merror[0m] [0m[0m                                              ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/shehroz/Scala-Chisel-Learning-Journey/src/main/scala/lab2/barrelshiftertest.scala:8:36: value in is not a member of String[0m
+[0m[[0m[31merror[0m] [0m[0m"Chisel Tester File barrelshifter" in {[0m
+[0m[[0m[31merror[0m] [0m[0m                                   ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/shehroz/Scala-Chisel-Learning-Journey/src/main/scala/lab2/barrelshiftertest.scala:9:5: not found: value test[0m
+[0m[[0m[31merror[0m] [0m[0m    test(new barrelshifter){  a=>[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/shehroz/Scala-Chisel-Learning-Journey/src/main/scala/lab2/encoder4to2test.scala:5:16: object tester is not a member of package chisel3[0m
+[0m[[0m[31merror[0m] [0m[0mimport chisel3.tester._[0m
+[0m[[0m[31merror[0m] [0m[0m               ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/shehroz/Scala-Chisel-Learning-Journey/src/main/scala/lab2/encoder4to2test.scala:6:12: object scalatest is not a member of package org[0m
+[0m[[0m[31merror[0m] [0m[0mimport org.scalatest.FreeSpec[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/shehroz/Scala-Chisel-Learning-Journey/src/main/scala/lab2/encoder4to2test.scala:8:31: not found: type FreeSpec[0m
+[0m[[0m[31merror[0m] [0m[0mclass encoder4to2test extends FreeSpec with ChiselScalatestTester{[0m
+[0m[[0m[31merror[0m] [0m[0m                              ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/shehroz/Scala-Chisel-Learning-Journey/src/main/scala/lab2/encoder4to2test.scala:8:45: not found: type ChiselScalatestTester[0m
+[0m[[0m[31merror[0m] [0m[0mclass encoder4to2test extends FreeSpec with ChiselScalatestTester{[0m
+[0m[[0m[31merror[0m] [0m[0m                                            ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/shehroz/Scala-Chisel-Learning-Journey/src/main/scala/lab2/encoder4to2test.scala:9:34: value in is not a member of String[0m
+[0m[[0m[31merror[0m] [0m[0m"Chisel Tester File encoder vcd" in {[0m
+[0m[[0m[31merror[0m] [0m[0m                                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/shehroz/Scala-Chisel-Learning-Journey/src/main/scala/lab2/encoder4to2test.scala:10:5: not found: value test[0m
+[0m[[0m[31merror[0m] [0m[0m    test(new encoder4to2){  a=>[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/shehroz/Scala-Chisel-Learning-Journey/src/main/scala/lab2/mux5to1test.scala:3:16: object tester is not a member of package chisel3[0m
+[0m[[0m[31merror[0m] [0m[0mimport chisel3.tester._[0m
+[0m[[0m[31merror[0m] [0m[0m               ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/shehroz/Scala-Chisel-Learning-Journey/src/main/scala/lab2/mux5to1test.scala:4:12: object scalatest is not a member of package org[0m
+[0m[[0m[31merror[0m] [0m[0mimport org.scalatest.FreeSpec[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/shehroz/Scala-Chisel-Learning-Journey/src/main/scala/lab2/mux5to1test.scala:7:27: not found: type FreeSpec[0m
+[0m[[0m[31merror[0m] [0m[0mclass Mux5to1Test extends FreeSpec with ChiselScalatestTester {[0m
+[0m[[0m[31merror[0m] [0m[0m                          ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/shehroz/Scala-Chisel-Learning-Journey/src/main/scala/lab2/mux5to1test.scala:7:41: not found: type ChiselScalatestTester[0m
+[0m[[0m[31merror[0m] [0m[0mclass Mux5to1Test extends FreeSpec with ChiselScalatestTester {[0m
+[0m[[0m[31merror[0m] [0m[0m                                        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/shehroz/Scala-Chisel-Learning-Journey/src/main/scala/lab2/mux5to1test.scala:8:21: value in is not a member of String[0m
+[0m[[0m[31merror[0m] [0m[0m  "Mux 5 to 1 test" in {[0m
+[0m[[0m[31merror[0m] [0m[0m                    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/shehroz/Scala-Chisel-Learning-Journey/src/main/scala/lab2/mux5to1test.scala:9:5: not found: value test[0m
+[0m[[0m[31merror[0m] [0m[0m    test(new mux5to1) { a =>[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/shehroz/Scala-Chisel-Learning-Journey/src/main/scala/lab2/nestedlookuptest.scala:4:16: object tester is not a member of package chisel3[0m
+[0m[[0m[31merror[0m] [0m[0mimport chisel3.tester._[0m
+[0m[[0m[31merror[0m] [0m[0m               ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/shehroz/Scala-Chisel-Learning-Journey/src/main/scala/lab2/nestedlookuptest.scala:5:12: object scalatest is not a member of package org[0m
+[0m[[0m[31merror[0m] [0m[0mimport org.scalatest.FreeSpec[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/shehroz/Scala-Chisel-Learning-Journey/src/main/scala/lab2/nestedlookuptest.scala:7:32: not found: type FreeSpec[0m
+[0m[[0m[31merror[0m] [0m[0mclass nestedlookuptest extends FreeSpec with ChiselScalatestTester{[0m
+[0m[[0m[31merror[0m] [0m[0m                               ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/shehroz/Scala-Chisel-Learning-Journey/src/main/scala/lab2/nestedlookuptest.scala:7:46: not found: type ChiselScalatestTester[0m
+[0m[[0m[31merror[0m] [0m[0mclass nestedlookuptest extends FreeSpec with ChiselScalatestTester{[0m
+[0m[[0m[31merror[0m] [0m[0m                                             ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/shehroz/Scala-Chisel-Learning-Journey/src/main/scala/lab2/nestedlookuptest.scala:8:22: value in is not a member of String[0m
+[0m[[0m[31merror[0m] [0m[0m"Chisel Tester File" in {[0m
+[0m[[0m[31merror[0m] [0m[0m                     ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/shehroz/Scala-Chisel-Learning-Journey/src/main/scala/lab2/nestedlookuptest.scala:9:5: not found: value test[0m
+[0m[[0m[31merror[0m] [0m[0m    test(new nestedlookup){  a=>[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/shehroz/Scala-Chisel-Learning-Journey/src/main/scala/pipelining/top.scala:17:10: value dataIn is not a member of chisel3.Bundle{val out: chisel3.Vec[chisel3.UInt]; val addr: chisel3.UInt; val rd_enable: chisel3.Bool; val wr_enable: chisel3.Bool; val mask: chisel3.Vec[chisel3.Bool]}[0m
+[0m[[0m[31merror[0m] [0m[0mdmmod.io.dataIn(0) := 0.U[0m
+[0m[[0m[31merror[0m] [0m[0m         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/shehroz/Scala-Chisel-Learning-Journey/src/main/scala/pipelining/top.scala:18:10: value dataIn is not a member of chisel3.Bundle{val out: chisel3.Vec[chisel3.UInt]; val addr: chisel3.UInt; val rd_enable: chisel3.Bool; val wr_enable: chisel3.Bool; val mask: chisel3.Vec[chisel3.Bool]}[0m
+[0m[[0m[31merror[0m] [0m[0mdmmod.io.dataIn(1) := 0.U[0m
+[0m[[0m[31merror[0m] [0m[0m         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/shehroz/Scala-Chisel-Learning-Journey/src/main/scala/pipelining/top.scala:19:10: value dataIn is not a member of chisel3.Bundle{val out: chisel3.Vec[chisel3.UInt]; val addr: chisel3.UInt; val rd_enable: chisel3.Bool; val wr_enable: chisel3.Bool; val mask: chisel3.Vec[chisel3.Bool]}[0m
+[0m[[0m[31merror[0m] [0m[0mdmmod.io.dataIn(2) := 0.U[0m
+[0m[[0m[31merror[0m] [0m[0m         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/shehroz/Scala-Chisel-Learning-Journey/src/main/scala/pipelining/top.scala:20:10: value dataIn is not a member of chisel3.Bundle{val out: chisel3.Vec[chisel3.UInt]; val addr: chisel3.UInt; val rd_enable: chisel3.Bool; val wr_enable: chisel3.Bool; val mask: chisel3.Vec[chisel3.Bool]}[0m
+[0m[[0m[31merror[0m] [0m[0mdmmod.io.dataIn(3) := 0.U[0m
+[0m[[0m[31merror[0m] [0m[0m         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/shehroz/Scala-Chisel-Learning-Journey/src/main/scala/pipelining/top.scala:80:18: value dataIn is not a member of chisel3.Bundle{val out: chisel3.Vec[chisel3.UInt]; val addr: chisel3.UInt; val rd_enable: chisel3.Bool; val wr_enable: chisel3.Bool; val mask: chisel3.Vec[chisel3.Bool]}[0m
+[0m[[0m[31merror[0m] [0m[0m        dmmod.io.dataIn(0) := regfmod.io.rdata2(7,0)[0m
+[0m[[0m[31merror[0m] [0m[0m                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/shehroz/Scala-Chisel-Learning-Journey/src/main/scala/pipelining/top.scala:81:18: value dataIn is not a member of chisel3.Bundle{val out: chisel3.Vec[chisel3.UInt]; val addr: chisel3.UInt; val rd_enable: chisel3.Bool; val wr_enable: chisel3.Bool; val mask: chisel3.Vec[chisel3.Bool]}[0m
+[0m[[0m[31merror[0m] [0m[0m        dmmod.io.dataIn(1) := 0.U[0m
+[0m[[0m[31merror[0m] [0m[0m                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/shehroz/Scala-Chisel-Learning-Journey/src/main/scala/pipelining/top.scala:82:18: value dataIn is not a member of chisel3.Bundle{val out: chisel3.Vec[chisel3.UInt]; val addr: chisel3.UInt; val rd_enable: chisel3.Bool; val wr_enable: chisel3.Bool; val mask: chisel3.Vec[chisel3.Bool]}[0m
+[0m[[0m[31merror[0m] [0m[0m        dmmod.io.dataIn(2) := 0.U[0m
+[0m[[0m[31merror[0m] [0m[0m                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/shehroz/Scala-Chisel-Learning-Journey/src/main/scala/pipelining/top.scala:83:18: value dataIn is not a member of chisel3.Bundle{val out: chisel3.Vec[chisel3.UInt]; val addr: chisel3.UInt; val rd_enable: chisel3.Bool; val wr_enable: chisel3.Bool; val mask: chisel3.Vec[chisel3.Bool]}[0m
+[0m[[0m[31merror[0m] [0m[0m        dmmod.io.dataIn(3) := 0.U[0m
+[0m[[0m[31merror[0m] [0m[0m                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/shehroz/Scala-Chisel-Learning-Journey/src/main/scala/pipelining/top.scala:93:18: value dataIn is not a member of chisel3.Bundle{val out: chisel3.Vec[chisel3.UInt]; val addr: chisel3.UInt; val rd_enable: chisel3.Bool; val wr_enable: chisel3.Bool; val mask: chisel3.Vec[chisel3.Bool]}[0m
+[0m[[0m[31merror[0m] [0m[0m        dmmod.io.dataIn(0) := 0.U[0m
+[0m[[0m[31merror[0m] [0m[0m                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/shehroz/Scala-Chisel-Learning-Journey/src/main/scala/pipelining/top.scala:94:18: value dataIn is not a member of chisel3.Bundle{val out: chisel3.Vec[chisel3.UInt]; val addr: chisel3.UInt; val rd_enable: chisel3.Bool; val wr_enable: chisel3.Bool; val mask: chisel3.Vec[chisel3.Bool]}[0m
+[0m[[0m[31merror[0m] [0m[0m        dmmod.io.dataIn(1) := regfmod.io.rdata2(7,0)[0m
+[0m[[0m[31merror[0m] [0m[0m                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/shehroz/Scala-Chisel-Learning-Journey/src/main/scala/pipelining/top.scala:95:18: value dataIn is not a member of chisel3.Bundle{val out: chisel3.Vec[chisel3.UInt]; val addr: chisel3.UInt; val rd_enable: chisel3.Bool; val wr_enable: chisel3.Bool; val mask: chisel3.Vec[chisel3.Bool]}[0m
+[0m[[0m[31merror[0m] [0m[0m        dmmod.io.dataIn(2) := 0.U[0m
+[0m[[0m[31merror[0m] [0m[0m                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/shehroz/Scala-Chisel-Learning-Journey/src/main/scala/pipelining/top.scala:96:18: value dataIn is not a member of chisel3.Bundle{val out: chisel3.Vec[chisel3.UInt]; val addr: chisel3.UInt; val rd_enable: chisel3.Bool; val wr_enable: chisel3.Bool; val mask: chisel3.Vec[chisel3.Bool]}[0m
+[0m[[0m[31merror[0m] [0m[0m        dmmod.io.dataIn(3) := 0.U[0m
+[0m[[0m[31merror[0m] [0m[0m                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/shehroz/Scala-Chisel-Learning-Journey/src/main/scala/pipelining/top.scala:106:18: value dataIn is not a member of chisel3.Bundle{val out: chisel3.Vec[chisel3.UInt]; val addr: chisel3.UInt; val rd_enable: chisel3.Bool; val wr_enable: chisel3.Bool; val mask: chisel3.Vec[chisel3.Bool]}[0m
+[0m[[0m[31merror[0m] [0m[0m        dmmod.io.dataIn(0) := 0.U[0m
+[0m[[0m[31merror[0m] [0m[0m                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/shehroz/Scala-Chisel-Learning-Journey/src/main/scala/pipelining/top.scala:107:18: value dataIn is not a member of chisel3.Bundle{val out: chisel3.Vec[chisel3.UInt]; val addr: chisel3.UInt; val rd_enable: chisel3.Bool; val wr_enable: chisel3.Bool; val mask: chisel3.Vec[chisel3.Bool]}[0m
+[0m[[0m[31merror[0m] [0m[0m        dmmod.io.dataIn(1) := 0.U[0m
+[0m[[0m[31merror[0m] [0m[0m                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/shehroz/Scala-Chisel-Learning-Journey/src/main/scala/pipelining/top.scala:108:18: value dataIn is not a member of chisel3.Bundle{val out: chisel3.Vec[chisel3.UInt]; val addr: chisel3.UInt; val rd_enable: chisel3.Bool; val wr_enable: chisel3.Bool; val mask: chisel3.Vec[chisel3.Bool]}[0m
+[0m[[0m[31merror[0m] [0m[0m        dmmod.io.dataIn(2) := regfmod.io.rdata2(7,0)[0m
+[0m[[0m[31merror[0m] [0m[0m                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/shehroz/Scala-Chisel-Learning-Journey/src/main/scala/pipelining/top.scala:109:18: value dataIn is not a member of chisel3.Bundle{val out: chisel3.Vec[chisel3.UInt]; val addr: chisel3.UInt; val rd_enable: chisel3.Bool; val wr_enable: chisel3.Bool; val mask: chisel3.Vec[chisel3.Bool]}[0m
+[0m[[0m[31merror[0m] [0m[0m        dmmod.io.dataIn(3) := 0.U[0m
+[0m[[0m[31merror[0m] [0m[0m                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/shehroz/Scala-Chisel-Learning-Journey/src/main/scala/pipelining/top.scala:119:18: value dataIn is not a member of chisel3.Bundle{val out: chisel3.Vec[chisel3.UInt]; val addr: chisel3.UInt; val rd_enable: chisel3.Bool; val wr_enable: chisel3.Bool; val mask: chisel3.Vec[chisel3.Bool]}[0m
+[0m[[0m[31merror[0m] [0m[0m        dmmod.io.dataIn(0) := 0.U[0m
+[0m[[0m[31merror[0m] [0m[0m                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/shehroz/Scala-Chisel-Learning-Journey/src/main/scala/pipelining/top.scala:120:18: value dataIn is not a member of chisel3.Bundle{val out: chisel3.Vec[chisel3.UInt]; val addr: chisel3.UInt; val rd_enable: chisel3.Bool; val wr_enable: chisel3.Bool; val mask: chisel3.Vec[chisel3.Bool]}[0m
+[0m[[0m[31merror[0m] [0m[0m        dmmod.io.dataIn(1) := 0.U[0m
+[0m[[0m[31merror[0m] [0m[0m                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/shehroz/Scala-Chisel-Learning-Journey/src/main/scala/pipelining/top.scala:121:18: value dataIn is not a member of chisel3.Bundle{val out: chisel3.Vec[chisel3.UInt]; val addr: chisel3.UInt; val rd_enable: chisel3.Bool; val wr_enable: chisel3.Bool; val mask: chisel3.Vec[chisel3.Bool]}[0m
+[0m[[0m[31merror[0m] [0m[0m        dmmod.io.dataIn(2) := 0.U[0m
+[0m[[0m[31merror[0m] [0m[0m                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/shehroz/Scala-Chisel-Learning-Journey/src/main/scala/pipelining/top.scala:122:18: value dataIn is not a member of chisel3.Bundle{val out: chisel3.Vec[chisel3.UInt]; val addr: chisel3.UInt; val rd_enable: chisel3.Bool; val wr_enable: chisel3.Bool; val mask: chisel3.Vec[chisel3.Bool]}[0m
+[0m[[0m[31merror[0m] [0m[0m        dmmod.io.dataIn(3) := regfmod.io.rdata2(7,0)[0m
+[0m[[0m[31merror[0m] [0m[0m                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/shehroz/Scala-Chisel-Learning-Journey/src/main/scala/pipelining/top.scala:136:18: value dataIn is not a member of chisel3.Bundle{val out: chisel3.Vec[chisel3.UInt]; val addr: chisel3.UInt; val rd_enable: chisel3.Bool; val wr_enable: chisel3.Bool; val mask: chisel3.Vec[chisel3.Bool]}[0m
+[0m[[0m[31merror[0m] [0m[0m        dmmod.io.dataIn(0) := regfmod.io.rdata2(7,0)[0m
+[0m[[0m[31merror[0m] [0m[0m                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/shehroz/Scala-Chisel-Learning-Journey/src/main/scala/pipelining/top.scala:137:18: value dataIn is not a member of chisel3.Bundle{val out: chisel3.Vec[chisel3.UInt]; val addr: chisel3.UInt; val rd_enable: chisel3.Bool; val wr_enable: chisel3.Bool; val mask: chisel3.Vec[chisel3.Bool]}[0m
+[0m[[0m[31merror[0m] [0m[0m        dmmod.io.dataIn(1) := regfmod.io.rdata2(15,8)[0m
+[0m[[0m[31merror[0m] [0m[0m                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/shehroz/Scala-Chisel-Learning-Journey/src/main/scala/pipelining/top.scala:138:18: value dataIn is not a member of chisel3.Bundle{val out: chisel3.Vec[chisel3.UInt]; val addr: chisel3.UInt; val rd_enable: chisel3.Bool; val wr_enable: chisel3.Bool; val mask: chisel3.Vec[chisel3.Bool]}[0m
+[0m[[0m[31merror[0m] [0m[0m        dmmod.io.dataIn(2) := 0.U[0m
+[0m[[0m[31merror[0m] [0m[0m                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/shehroz/Scala-Chisel-Learning-Journey/src/main/scala/pipelining/top.scala:139:18: value dataIn is not a member of chisel3.Bundle{val out: chisel3.Vec[chisel3.UInt]; val addr: chisel3.UInt; val rd_enable: chisel3.Bool; val wr_enable: chisel3.Bool; val mask: chisel3.Vec[chisel3.Bool]}[0m
+[0m[[0m[31merror[0m] [0m[0m        dmmod.io.dataIn(3) := 0.U[0m
+[0m[[0m[31merror[0m] [0m[0m                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/shehroz/Scala-Chisel-Learning-Journey/src/main/scala/pipelining/top.scala:151:18: value dataIn is not a member of chisel3.Bundle{val out: chisel3.Vec[chisel3.UInt]; val addr: chisel3.UInt; val rd_enable: chisel3.Bool; val wr_enable: chisel3.Bool; val mask: chisel3.Vec[chisel3.Bool]}[0m
+[0m[[0m[31merror[0m] [0m[0m        dmmod.io.dataIn(0) := 0.U[0m
+[0m[[0m[31merror[0m] [0m[0m                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/shehroz/Scala-Chisel-Learning-Journey/src/main/scala/pipelining/top.scala:152:18: value dataIn is not a member of chisel3.Bundle{val out: chisel3.Vec[chisel3.UInt]; val addr: chisel3.UInt; val rd_enable: chisel3.Bool; val wr_enable: chisel3.Bool; val mask: chisel3.Vec[chisel3.Bool]}[0m
+[0m[[0m[31merror[0m] [0m[0m        dmmod.io.dataIn(1) := regfmod.io.rdata2(7,0)[0m
+[0m[[0m[31merror[0m] [0m[0m                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/shehroz/Scala-Chisel-Learning-Journey/src/main/scala/pipelining/top.scala:153:18: value dataIn is not a member of chisel3.Bundle{val out: chisel3.Vec[chisel3.UInt]; val addr: chisel3.UInt; val rd_enable: chisel3.Bool; val wr_enable: chisel3.Bool; val mask: chisel3.Vec[chisel3.Bool]}[0m
+[0m[[0m[31merror[0m] [0m[0m        dmmod.io.dataIn(2) := regfmod.io.rdata2(15,8)[0m
+[0m[[0m[31merror[0m] [0m[0m                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/shehroz/Scala-Chisel-Learning-Journey/src/main/scala/pipelining/top.scala:154:18: value dataIn is not a member of chisel3.Bundle{val out: chisel3.Vec[chisel3.UInt]; val addr: chisel3.UInt; val rd_enable: chisel3.Bool; val wr_enable: chisel3.Bool; val mask: chisel3.Vec[chisel3.Bool]}[0m
+[0m[[0m[31merror[0m] [0m[0m        dmmod.io.dataIn(3) := 0.U[0m
+[0m[[0m[31merror[0m] [0m[0m                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/shehroz/Scala-Chisel-Learning-Journey/src/main/scala/pipelining/top.scala:165:18: value dataIn is not a member of chisel3.Bundle{val out: chisel3.Vec[chisel3.UInt]; val addr: chisel3.UInt; val rd_enable: chisel3.Bool; val wr_enable: chisel3.Bool; val mask: chisel3.Vec[chisel3.Bool]}[0m
+[0m[[0m[31merror[0m] [0m[0m        dmmod.io.dataIn(0) := 0.U[0m
+[0m[[0m[31merror[0m] [0m[0m                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/shehroz/Scala-Chisel-Learning-Journey/src/main/scala/pipelining/top.scala:166:18: value dataIn is not a member of chisel3.Bundle{val out: chisel3.Vec[chisel3.UInt]; val addr: chisel3.UInt; val rd_enable: chisel3.Bool; val wr_enable: chisel3.Bool; val mask: chisel3.Vec[chisel3.Bool]}[0m
+[0m[[0m[31merror[0m] [0m[0m        dmmod.io.dataIn(1) := 0.U[0m
+[0m[[0m[31merror[0m] [0m[0m                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/shehroz/Scala-Chisel-Learning-Journey/src/main/scala/pipelining/top.scala:167:18: value dataIn is not a member of chisel3.Bundle{val out: chisel3.Vec[chisel3.UInt]; val addr: chisel3.UInt; val rd_enable: chisel3.Bool; val wr_enable: chisel3.Bool; val mask: chisel3.Vec[chisel3.Bool]}[0m
+[0m[[0m[31merror[0m] [0m[0m        dmmod.io.dataIn(2) := regfmod.io.rdata2(7,0)[0m
+[0m[[0m[31merror[0m] [0m[0m                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/shehroz/Scala-Chisel-Learning-Journey/src/main/scala/pipelining/top.scala:168:18: value dataIn is not a member of chisel3.Bundle{val out: chisel3.Vec[chisel3.UInt]; val addr: chisel3.UInt; val rd_enable: chisel3.Bool; val wr_enable: chisel3.Bool; val mask: chisel3.Vec[chisel3.Bool]}[0m
+[0m[[0m[31merror[0m] [0m[0m        dmmod.io.dataIn(3) := regfmod.io.rdata2(15,8)[0m
+[0m[[0m[31merror[0m] [0m[0m                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/shehroz/Scala-Chisel-Learning-Journey/src/main/scala/pipelining/top.scala:179:18: value dataIn is not a member of chisel3.Bundle{val out: chisel3.Vec[chisel3.UInt]; val addr: chisel3.UInt; val rd_enable: chisel3.Bool; val wr_enable: chisel3.Bool; val mask: chisel3.Vec[chisel3.Bool]}[0m
+[0m[[0m[31merror[0m] [0m[0m        dmmod.io.dataIn(0) := regfmod.io.rdata2(15,8)[0m
+[0m[[0m[31merror[0m] [0m[0m                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/shehroz/Scala-Chisel-Learning-Journey/src/main/scala/pipelining/top.scala:180:18: value dataIn is not a member of chisel3.Bundle{val out: chisel3.Vec[chisel3.UInt]; val addr: chisel3.UInt; val rd_enable: chisel3.Bool; val wr_enable: chisel3.Bool; val mask: chisel3.Vec[chisel3.Bool]}[0m
+[0m[[0m[31merror[0m] [0m[0m        dmmod.io.dataIn(1) := 0.U[0m
+[0m[[0m[31merror[0m] [0m[0m                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/shehroz/Scala-Chisel-Learning-Journey/src/main/scala/pipelining/top.scala:181:18: value dataIn is not a member of chisel3.Bundle{val out: chisel3.Vec[chisel3.UInt]; val addr: chisel3.UInt; val rd_enable: chisel3.Bool; val wr_enable: chisel3.Bool; val mask: chisel3.Vec[chisel3.Bool]}[0m
+[0m[[0m[31merror[0m] [0m[0m        dmmod.io.dataIn(2) := 0.U[0m
+[0m[[0m[31merror[0m] [0m[0m                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/shehroz/Scala-Chisel-Learning-Journey/src/main/scala/pipelining/top.scala:182:18: value dataIn is not a member of chisel3.Bundle{val out: chisel3.Vec[chisel3.UInt]; val addr: chisel3.UInt; val rd_enable: chisel3.Bool; val wr_enable: chisel3.Bool; val mask: chisel3.Vec[chisel3.Bool]}[0m
+[0m[[0m[31merror[0m] [0m[0m        dmmod.io.dataIn(3) := regfmod.io.rdata2(7,0)[0m
+[0m[[0m[31merror[0m] [0m[0m                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/shehroz/Scala-Chisel-Learning-Journey/src/main/scala/pipelining/top.scala:195:18: value dataIn is not a member of chisel3.Bundle{val out: chisel3.Vec[chisel3.UInt]; val addr: chisel3.UInt; val rd_enable: chisel3.Bool; val wr_enable: chisel3.Bool; val mask: chisel3.Vec[chisel3.Bool]}[0m
+[0m[[0m[31merror[0m] [0m[0m        dmmod.io.dataIn(0) := regfmod.io.rdata2(7,0)[0m
+[0m[[0m[31merror[0m] [0m[0m                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/shehroz/Scala-Chisel-Learning-Journey/src/main/scala/pipelining/top.scala:196:18: value dataIn is not a member of chisel3.Bundle{val out: chisel3.Vec[chisel3.UInt]; val addr: chisel3.UInt; val rd_enable: chisel3.Bool; val wr_enable: chisel3.Bool; val mask: chisel3.Vec[chisel3.Bool]}[0m
+[0m[[0m[31merror[0m] [0m[0m        dmmod.io.dataIn(1) := regfmod.io.rdata2(15,8)[0m
+[0m[[0m[31merror[0m] [0m[0m                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/shehroz/Scala-Chisel-Learning-Journey/src/main/scala/pipelining/top.scala:197:18: value dataIn is not a member of chisel3.Bundle{val out: chisel3.Vec[chisel3.UInt]; val addr: chisel3.UInt; val rd_enable: chisel3.Bool; val wr_enable: chisel3.Bool; val mask: chisel3.Vec[chisel3.Bool]}[0m
+[0m[[0m[31merror[0m] [0m[0m        dmmod.io.dataIn(2) := regfmod.io.rdata2(23,16)[0m
+[0m[[0m[31merror[0m] [0m[0m                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/shehroz/Scala-Chisel-Learning-Journey/src/main/scala/pipelining/top.scala:198:18: value dataIn is not a member of chisel3.Bundle{val out: chisel3.Vec[chisel3.UInt]; val addr: chisel3.UInt; val rd_enable: chisel3.Bool; val wr_enable: chisel3.Bool; val mask: chisel3.Vec[chisel3.Bool]}[0m
+[0m[[0m[31merror[0m] [0m[0m        dmmod.io.dataIn(3) := regfmod.io.rdata2(31,24)[0m
+[0m[[0m[31merror[0m] [0m[0m                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/shehroz/Scala-Chisel-Learning-Journey/src/main/scala/singlecycle/top.scala:17:10: value dataIn is not a member of chisel3.Bundle{val out: chisel3.Vec[chisel3.UInt]; val addr: chisel3.UInt; val rd_enable: chisel3.Bool; val wr_enable: chisel3.Bool; val mask: chisel3.Vec[chisel3.Bool]}[0m
+[0m[[0m[31merror[0m] [0m[0mdmmod.io.dataIn(0) := 0.U[0m
+[0m[[0m[31merror[0m] [0m[0m         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/shehroz/Scala-Chisel-Learning-Journey/src/main/scala/singlecycle/top.scala:18:10: value dataIn is not a member of chisel3.Bundle{val out: chisel3.Vec[chisel3.UInt]; val addr: chisel3.UInt; val rd_enable: chisel3.Bool; val wr_enable: chisel3.Bool; val mask: chisel3.Vec[chisel3.Bool]}[0m
+[0m[[0m[31merror[0m] [0m[0mdmmod.io.dataIn(1) := 0.U[0m
+[0m[[0m[31merror[0m] [0m[0m         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/shehroz/Scala-Chisel-Learning-Journey/src/main/scala/singlecycle/top.scala:19:10: value dataIn is not a member of chisel3.Bundle{val out: chisel3.Vec[chisel3.UInt]; val addr: chisel3.UInt; val rd_enable: chisel3.Bool; val wr_enable: chisel3.Bool; val mask: chisel3.Vec[chisel3.Bool]}[0m
+[0m[[0m[31merror[0m] [0m[0mdmmod.io.dataIn(2) := 0.U[0m
+[0m[[0m[31merror[0m] [0m[0m         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/shehroz/Scala-Chisel-Learning-Journey/src/main/scala/singlecycle/top.scala:20:10: value dataIn is not a member of chisel3.Bundle{val out: chisel3.Vec[chisel3.UInt]; val addr: chisel3.UInt; val rd_enable: chisel3.Bool; val wr_enable: chisel3.Bool; val mask: chisel3.Vec[chisel3.Bool]}[0m
+[0m[[0m[31merror[0m] [0m[0mdmmod.io.dataIn(3) := 0.U[0m
+[0m[[0m[31merror[0m] [0m[0m         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/shehroz/Scala-Chisel-Learning-Journey/src/main/scala/singlecycle/top.scala:80:18: value dataIn is not a member of chisel3.Bundle{val out: chisel3.Vec[chisel3.UInt]; val addr: chisel3.UInt; val rd_enable: chisel3.Bool; val wr_enable: chisel3.Bool; val mask: chisel3.Vec[chisel3.Bool]}[0m
+[0m[[0m[31merror[0m] [0m[0m        dmmod.io.dataIn(0) := regfmod.io.rdata2(7,0)[0m
+[0m[[0m[31merror[0m] [0m[0m                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/shehroz/Scala-Chisel-Learning-Journey/src/main/scala/singlecycle/top.scala:94:18: value dataIn is not a member of chisel3.Bundle{val out: chisel3.Vec[chisel3.UInt]; val addr: chisel3.UInt; val rd_enable: chisel3.Bool; val wr_enable: chisel3.Bool; val mask: chisel3.Vec[chisel3.Bool]}[0m
+[0m[[0m[31merror[0m] [0m[0m        dmmod.io.dataIn(1) := regfmod.io.rdata2(7,0)[0m
+[0m[[0m[31merror[0m] [0m[0m                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/shehroz/Scala-Chisel-Learning-Journey/src/main/scala/singlecycle/top.scala:108:18: value dataIn is not a member of chisel3.Bundle{val out: chisel3.Vec[chisel3.UInt]; val addr: chisel3.UInt; val rd_enable: chisel3.Bool; val wr_enable: chisel3.Bool; val mask: chisel3.Vec[chisel3.Bool]}[0m
+[0m[[0m[31merror[0m] [0m[0m        dmmod.io.dataIn(2) := regfmod.io.rdata2(7,0)[0m
+[0m[[0m[31merror[0m] [0m[0m                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/shehroz/Scala-Chisel-Learning-Journey/src/main/scala/singlecycle/top.scala:122:18: value dataIn is not a member of chisel3.Bundle{val out: chisel3.Vec[chisel3.UInt]; val addr: chisel3.UInt; val rd_enable: chisel3.Bool; val wr_enable: chisel3.Bool; val mask: chisel3.Vec[chisel3.Bool]}[0m
+[0m[[0m[31merror[0m] [0m[0m        dmmod.io.dataIn(3) := regfmod.io.rdata2(7,0)[0m
+[0m[[0m[31merror[0m] [0m[0m                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/shehroz/Scala-Chisel-Learning-Journey/src/main/scala/singlecycle/top.scala:136:18: value dataIn is not a member of chisel3.Bundle{val out: chisel3.Vec[chisel3.UInt]; val addr: chisel3.UInt; val rd_enable: chisel3.Bool; val wr_enable: chisel3.Bool; val mask: chisel3.Vec[chisel3.Bool]}[0m
+[0m[[0m[31merror[0m] [0m[0m        dmmod.io.dataIn(0) := regfmod.io.rdata2(7,0)[0m
+[0m[[0m[31merror[0m] [0m[0m                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/shehroz/Scala-Chisel-Learning-Journey/src/main/scala/singlecycle/top.scala:137:18: value dataIn is not a member of chisel3.Bundle{val out: chisel3.Vec[chisel3.UInt]; val addr: chisel3.UInt; val rd_enable: chisel3.Bool; val wr_enable: chisel3.Bool; val mask: chisel3.Vec[chisel3.Bool]}[0m
+[0m[[0m[31merror[0m] [0m[0m        dmmod.io.dataIn(1) := regfmod.io.rdata2(15,8)[0m
+[0m[[0m[31merror[0m] [0m[0m                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/shehroz/Scala-Chisel-Learning-Journey/src/main/scala/singlecycle/top.scala:152:18: value dataIn is not a member of chisel3.Bundle{val out: chisel3.Vec[chisel3.UInt]; val addr: chisel3.UInt; val rd_enable: chisel3.Bool; val wr_enable: chisel3.Bool; val mask: chisel3.Vec[chisel3.Bool]}[0m
+[0m[[0m[31merror[0m] [0m[0m        dmmod.io.dataIn(1) := regfmod.io.rdata2(7,0)[0m
+[0m[[0m[31merror[0m] [0m[0m                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/shehroz/Scala-Chisel-Learning-Journey/src/main/scala/singlecycle/top.scala:153:18: value dataIn is not a member of chisel3.Bundle{val out: chisel3.Vec[chisel3.UInt]; val addr: chisel3.UInt; val rd_enable: chisel3.Bool; val wr_enable: chisel3.Bool; val mask: chisel3.Vec[chisel3.Bool]}[0m
+[0m[[0m[31merror[0m] [0m[0m        dmmod.io.dataIn(2) := regfmod.io.rdata2(15,8)[0m
+[0m[[0m[31merror[0m] [0m[0m                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/shehroz/Scala-Chisel-Learning-Journey/src/main/scala/singlecycle/top.scala:167:18: value dataIn is not a member of chisel3.Bundle{val out: chisel3.Vec[chisel3.UInt]; val addr: chisel3.UInt; val rd_enable: chisel3.Bool; val wr_enable: chisel3.Bool; val mask: chisel3.Vec[chisel3.Bool]}[0m
+[0m[[0m[31merror[0m] [0m[0m        dmmod.io.dataIn(2) := regfmod.io.rdata2(7,0)[0m
+[0m[[0m[31merror[0m] [0m[0m                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/shehroz/Scala-Chisel-Learning-Journey/src/main/scala/singlecycle/top.scala:168:18: value dataIn is not a member of chisel3.Bundle{val out: chisel3.Vec[chisel3.UInt]; val addr: chisel3.UInt; val rd_enable: chisel3.Bool; val wr_enable: chisel3.Bool; val mask: chisel3.Vec[chisel3.Bool]}[0m
+[0m[[0m[31merror[0m] [0m[0m        dmmod.io.dataIn(3) := regfmod.io.rdata2(15,8)[0m
+[0m[[0m[31merror[0m] [0m[0m                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/shehroz/Scala-Chisel-Learning-Journey/src/main/scala/singlecycle/top.scala:179:18: value dataIn is not a member of chisel3.Bundle{val out: chisel3.Vec[chisel3.UInt]; val addr: chisel3.UInt; val rd_enable: chisel3.Bool; val wr_enable: chisel3.Bool; val mask: chisel3.Vec[chisel3.Bool]}[0m
+[0m[[0m[31merror[0m] [0m[0m        dmmod.io.dataIn(0) := regfmod.io.rdata2(15,8)[0m
+[0m[[0m[31merror[0m] [0m[0m                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/shehroz/Scala-Chisel-Learning-Journey/src/main/scala/singlecycle/top.scala:182:18: value dataIn is not a member of chisel3.Bundle{val out: chisel3.Vec[chisel3.UInt]; val addr: chisel3.UInt; val rd_enable: chisel3.Bool; val wr_enable: chisel3.Bool; val mask: chisel3.Vec[chisel3.Bool]}[0m
+[0m[[0m[31merror[0m] [0m[0m        dmmod.io.dataIn(3) := regfmod.io.rdata2(7,0)[0m
+[0m[[0m[31merror[0m] [0m[0m                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/shehroz/Scala-Chisel-Learning-Journey/src/main/scala/singlecycle/top.scala:195:18: value dataIn is not a member of chisel3.Bundle{val out: chisel3.Vec[chisel3.UInt]; val addr: chisel3.UInt; val rd_enable: chisel3.Bool; val wr_enable: chisel3.Bool; val mask: chisel3.Vec[chisel3.Bool]}[0m
+[0m[[0m[31merror[0m] [0m[0m        dmmod.io.dataIn(0) := regfmod.io.rdata2(7,0)[0m
+[0m[[0m[31merror[0m] [0m[0m                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/shehroz/Scala-Chisel-Learning-Journey/src/main/scala/singlecycle/top.scala:196:18: value dataIn is not a member of chisel3.Bundle{val out: chisel3.Vec[chisel3.UInt]; val addr: chisel3.UInt; val rd_enable: chisel3.Bool; val wr_enable: chisel3.Bool; val mask: chisel3.Vec[chisel3.Bool]}[0m
+[0m[[0m[31merror[0m] [0m[0m        dmmod.io.dataIn(1) := regfmod.io.rdata2(15,8)[0m
+[0m[[0m[31merror[0m] [0m[0m                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/shehroz/Scala-Chisel-Learning-Journey/src/main/scala/singlecycle/top.scala:197:18: value dataIn is not a member of chisel3.Bundle{val out: chisel3.Vec[chisel3.UInt]; val addr: chisel3.UInt; val rd_enable: chisel3.Bool; val wr_enable: chisel3.Bool; val mask: chisel3.Vec[chisel3.Bool]}[0m
+[0m[[0m[31merror[0m] [0m[0m        dmmod.io.dataIn(2) := regfmod.io.rdata2(23,16)[0m
+[0m[[0m[31merror[0m] [0m[0m                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/shehroz/Scala-Chisel-Learning-Journey/src/main/scala/singlecycle/top.scala:198:18: value dataIn is not a member of chisel3.Bundle{val out: chisel3.Vec[chisel3.UInt]; val addr: chisel3.UInt; val rd_enable: chisel3.Bool; val wr_enable: chisel3.Bool; val mask: chisel3.Vec[chisel3.Bool]}[0m
+[0m[[0m[31merror[0m] [0m[0m        dmmod.io.dataIn(3) := regfmod.io.rdata2(31,24)[0m
+[0m[[0m[31merror[0m] [0m[0m                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m90 errors found[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[31merror[0m] [0m[0mTotal time: 11 s, completed Dec 1, 2023, 11:26:10 AM[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m
+[0m[[0m[0minfo[0m] [0m[0mshutting down sbt server[0m

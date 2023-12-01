@@ -1,0 +1,37 @@
+2023.12.01 13:04:21 INFO  Started: Metals version 1.1.0 in folders '/home/shehroz/5 stage pipielining processor' for client Visual Studio Code 1.84.2.
+2023.12.01 13:04:22 ERROR Unexpected error initializing server: 
+scala.concurrent.Future$$anon$2: Future.filter predicate is not satisfied
+
+2023.12.01 13:10:32 INFO  no build target found for /home/shehroz/5 stage pipielining processor/src/test/scala/pipeline_test/toptest.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2023.12.01 13:10:32 WARN  no build target for: /home/shehroz/5 stage pipielining processor/src/test/scala/pipeline_test/toptest.scala
+Dec 01, 2023 1:10:33 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 19
+Dec 01, 2023 1:10:33 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 22
+Dec 01, 2023 1:10:33 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 23
+2023.12.01 13:10:34 WARN  no build target for: /home/shehroz/5 stage pipielining processor/src/test/scala/pipeline_test/toptest.scala
+Dec 01, 2023 1:10:59 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Dec 01, 2023 1:11:07 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Dec 01, 2023 1:11:23 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Dec 01, 2023 1:11:56 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+2023.12.01 13:12:12 WARN  no build target for: /home/shehroz/5 stage pipielining processor/src/main/scala/pipeline/alu.scala
+2023.12.01 13:12:18 WARN  no build target for: /home/shehroz/5 stage pipielining processor/src/main/scala/pipeline/controlunit.scala
+2023.12.01 13:12:26 WARN  no build target for: /home/shehroz/5 stage pipielining processor/src/main/scala/pipeline/datamemory.scala
+2023.12.01 13:12:32 WARN  no build target for: /home/shehroz/5 stage pipielining processor/src/main/scala/pipeline/Imem.scala
+2023.12.01 13:12:37 WARN  no build target for: /home/shehroz/5 stage pipielining processor/src/main/scala/pipeline/immgenr.scala
+2023.12.01 13:12:47 WARN  no build target for: /home/shehroz/5 stage pipielining processor/src/main/scala/pipeline/pc.scala
+2023.12.01 13:12:53 WARN  no build target for: /home/shehroz/5 stage pipielining processor/src/main/scala/pipeline/registerfile.scala
+2023.12.01 13:12:59 WARN  no build target for: /home/shehroz/5 stage pipielining processor/src/main/scala/pipeline/top.scala
+Dec 01, 2023 1:15:44 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 314
+2023.12.01 13:19:31 WARN  no build target for: /home/shehroz/5 stage pipielining processor/src/test/scala/pipeline_test/toptest.scala
+2023.12.01 13:20:22 WARN  no build target for: /home/shehroz/5 stage pipielining processor/src/test/scala/pipeline_test/toptest.scala
+2023.12.01 13:20:24 WARN  no build target for: /home/shehroz/5 stage pipielining processor/src/test/scala/pipeline_test/toptest.scala
+2023.12.01 14:13:43 WARN  no build target for: /home/shehroz/5 stage pipielining processor/src/test/scala/pipeline/toptest.scala
+Dec 01, 2023 2:16:06 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 423

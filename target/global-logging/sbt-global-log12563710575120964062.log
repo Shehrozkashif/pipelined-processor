@@ -1,0 +1,39 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(testOnly singlecycle.toptest, Some(5d25e606-2368-4cab-98b4-1c125ed21c98), Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Test / testOnly[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 56 Scala sources to /home/shehroz/Scala-Chisel-Learning-Journey/target/scala-2.12/classes ...[0m
+[0m[[0m[31merror[0m] [0m[0m/home/shehroz/Scala-Chisel-Learning-Journey/src/main/scala/gcd/singlecycle/Imem.scala:6:7: Imem is already defined as class Imem[0m
+[0m[[0m[31merror[0m] [0m[0mclass Imem extends Module {[0m
+[0m[[0m[31merror[0m] [0m[0m      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/shehroz/Scala-Chisel-Learning-Journey/src/main/scala/gcd/singlecycle/alu.scala:7:8: oprate is already defined as object oprate[0m
+[0m[[0m[31merror[0m] [0m[0mobject oprate{[0m
+[0m[[0m[31merror[0m] [0m[0m       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/shehroz/Scala-Chisel-Learning-Journey/src/main/scala/gcd/singlecycle/alu.scala:20:7: alu is already defined as class alu[0m
+[0m[[0m[31merror[0m] [0m[0mclass alu extends Module {[0m
+[0m[[0m[31merror[0m] [0m[0m      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/shehroz/Scala-Chisel-Learning-Journey/src/main/scala/gcd/singlecycle/controlunit.scala:4:7: controlunit is already defined as class controlunit[0m
+[0m[[0m[31merror[0m] [0m[0mclass controlunit extends Module{[0m
+[0m[[0m[31merror[0m] [0m[0m      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/shehroz/Scala-Chisel-Learning-Journey/src/main/scala/gcd/singlecycle/datamemory.scala:5:7: datamemory is already defined as class datamemory[0m
+[0m[[0m[31merror[0m] [0m[0mclass datamemory extends Module {[0m
+[0m[[0m[31merror[0m] [0m[0m      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/shehroz/Scala-Chisel-Learning-Journey/src/main/scala/gcd/singlecycle/immgenr.scala:4:8: opimm is already defined as object opimm[0m
+[0m[[0m[31merror[0m] [0m[0mobject opimm {[0m
+[0m[[0m[31merror[0m] [0m[0m       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/shehroz/Scala-Chisel-Learning-Journey/src/main/scala/gcd/singlecycle/immgenr.scala:16:7: immgenr is already defined as class immgenr[0m
+[0m[[0m[31merror[0m] [0m[0mclass immgenr extends Module {[0m
+[0m[[0m[31merror[0m] [0m[0m      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/shehroz/Scala-Chisel-Learning-Journey/src/main/scala/gcd/singlecycle/pc.scala:4:7: pc is already defined as class pc[0m
+[0m[[0m[31merror[0m] [0m[0mclass pc extends Module{[0m
+[0m[[0m[31merror[0m] [0m[0m      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/shehroz/Scala-Chisel-Learning-Journey/src/main/scala/gcd/singlecycle/registerfile.scala:3:7: registerfile is already defined as class registerfile[0m
+[0m[[0m[31merror[0m] [0m[0mclass registerfile extends Module{[0m
+[0m[[0m[31merror[0m] [0m[0m      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/shehroz/Scala-Chisel-Learning-Journey/src/main/scala/gcd/singlecycle/top.scala:5:7: top is already defined as class top[0m
+[0m[[0m[31merror[0m] [0m[0mclass top extends Module {[0m
+[0m[[0m[31merror[0m] [0m[0m      ^[0m
+[0m[[0m[31merror[0m] [0m[0m10 errors found[0m
+[0m[[0m[0mdebug[0m] [0m[0mForcing garbage collection...[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[31merror[0m] [0m[0mTotal time: 1 s, completed Nov 30, 2023, 5:13:27 PM[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m
