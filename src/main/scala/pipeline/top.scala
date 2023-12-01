@@ -6,6 +6,7 @@ class top extends Module {
   val io = IO(new Bundle {
 val output= Output(UInt(32.W))
   })
+  
 val alumod = Module(new alu)
 val cumod = Module(new controlunit)
 val inmmod = Module(new Imem)

@@ -1,4 +1,7 @@
-[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(pipeline.toptest, org.scalatest.tools.Framework$$anon$1@6613c557, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(testOnly pipeline.toptest, Some(a11a4f4e-0728-433d-9456-654c728fe3de), Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Test / testOnly[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /home/shehroz/5 stage pipielining processor/target/scala-2.12/test-classes ...[0m
 [0m[[0m[0minfo[0m] [0m[0m[32mtoptest:[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[31m- Chisel Tester File toptest *** FAILED ***[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[31m  io_output=0 (0x0) did not equal expected=104 (0x68) (lines in toptest.scala: 8) (toptest.scala:11)[0m[0m
@@ -10,3 +13,6 @@
 [0m[[0m[31merror[0m] [0m[0mFailed tests:[0m
 [0m[[0m[31merror[0m] [0m[0m	pipeline.toptest[0m
 [0m[[0m[31merror[0m] [0m[0m(Test / [31mtestOnly[0m) sbt.TestsFailedException: Tests unsuccessful[0m
+[0m[[0m[31merror[0m] [0m[0mTotal time: 10 s, completed Dec 1, 2023, 2:36:03 PM[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0mForcing garbage collection...[0m
