@@ -1,4 +1,11 @@
-class decode {
+package pipeline
+import chisel3._
+// import chisel3.stage.ChiselStage
+import chisel3.util._
+import chisel3.experimental.IO
+
+
+class decode  extends Module{
   val io = IO(new Bundle{
 // register file input/outputs
 val raddr1 = Input ( UInt (5. W ) ) // rs1 
@@ -9,18 +16,18 @@ val wen = Input ( Bool () ) // wenable input
 val waddr = Input ( UInt (5. W ) )  //rd
 val wdata = Input ( UInt ( 32 . W ) ) // rd data
 //control unit connections 
-val instruction = Input(UInt(32.W))
+val instructioncu = Input(UInt(32.W))
 val func3_7 = Output(UInt(3.W))
 val en_imem = Output(Bool())  // imem enable
 val en_reg = Output(Bool()) // reg enable
 val rd = Output(UInt(5.W))
 val rs2 = Output(UInt(5.W))
 val rs1 = Output(UInt(5.W))
-val imm = Output(UInt(12.W))
+val immcu = Output(UInt(12.W))
 
-// immidiate geberator input/outputs
-val instruction = Input(UInt(32.W))
-val imm = Output(UInt(32.W))
+// immidiate generator input/outputs
+val instructionimm = Input(UInt(32.W))
+val immg = Output(UInt(32.W))
 
   } )
 
@@ -37,13 +44,13 @@ regfmod.io.waddr := cumod.io.rd
 
 
 // decode module connection with  controlunit
-cumod.io.instruction:=io.instruction
+cumod.io.instruction:=io.instructioncu
 cumod.io.func3_7:=io.func3_7
 cumod.io.en_imem:=io.en_imem
 cumod.io.rd:=io.rd
 cumod.io.rs2:=io.rs2
 cumod.io.rs1:=io.rs1
-cumod.io.imm:=io.imm
+cumod.io.imm:=io.immcu
 // decode module connections with registerfile
 
 regfmod.io.raddr1:=io.raddr1
@@ -56,8 +63,8 @@ regfmod.io.wdata:=io.wdata
 
 // decode module connections with immdiate generator 
 
-immg.io.instruction:=io.instruction
-immg.io.imm:=io.imm
+immg.io.instruction:=io.instructionimm
+immg.io.imm:=io.immg
 
 
 

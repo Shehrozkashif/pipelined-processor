@@ -1,5 +1,11 @@
-import scala.annotation.newMain.alias
-class execute {
+package pipeline
+import chisel3._
+// import chisel3.stage.ChiselStage
+import chisel3.util._
+import chisel3.experimental.IO
+
+
+class execute  extends Module {
   val io = IO(new Bundle {
     val A = Input(UInt(32.W))
     val B = Input(UInt(32.W))
