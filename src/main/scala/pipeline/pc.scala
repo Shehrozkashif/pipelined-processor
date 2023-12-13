@@ -9,7 +9,7 @@ val io = IO(new Bundle{
   val jump = Input(Bool())     // Branch
   val jump2 = Input(Bool())    // Jal
   val jump3 = Input(Bool())  // Jalr
-  val rs1data =Input(UInt(32.W))
+  // val rs1data =Input(UInt(32.W))
 
   } )
   

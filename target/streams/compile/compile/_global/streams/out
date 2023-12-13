@@ -1,7 +1,4 @@
-[0m[[0m[0minfo[0m] [0m[0m/home/shehroz/Scala-Chisel-Learning-Journey/src/main/scala/lab4/ALU.scala:1:1: [0m
-[0m[[0m[0minfo[0m] [0m[0mFound names but no class, trait or object is defined in the compilation unit.[0m
-[0m[[0m[0minfo[0m] [0m[0mThe incremental compiler cannot record the dependency information in such case.[0m
-[0m[[0m[0minfo[0m] [0m[0mSome errors like unused import referring to a non-existent class might not be reported.[0m
-[0m[[0m[0minfo[0m] [0m[0m    [0m
-[0m[[0m[0minfo[0m] [0m[0mpackage gcd.lab4[0m
-[0m[[0m[0minfo[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/shehroz/5 stage pipielining processor/src/main/scala/pipeline/top.scala:46:10: value rs1data is not a member of chisel3.Bundle{val imm: chisel3.UInt; val out: chisel3.UInt; val jump: chisel3.Bool; val jump2: chisel3.Bool; val jump3: chisel3.Bool}[0m
+[0m[[0m[31merror[0m] [0m[0mpcmod.io.rs1data := regfmod.io.rdata1[0m
+[0m[[0m[31merror[0m] [0m[0m         ^[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m

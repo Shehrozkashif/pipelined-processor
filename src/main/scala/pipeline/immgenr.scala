@@ -35,7 +35,7 @@ class immgenr extends Module {
     is(B) {
       io.imm := Cat(Fill(19, io.instruction(31)), io.instruction(31), io.instruction(7), io.instruction(30, 25),io.instruction(11, 8),0.U)
     }
-    is(U) {
+    is(U) { // lui
       // io.imm := Cat(Fill(20, io.instruction(31)), io.instruction(31, 12))
       io.imm := Cat(io.instruction(31,12), Fill(12, 0.U))
     }

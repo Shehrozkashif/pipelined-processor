@@ -5,7 +5,7 @@ import org.scalatest.FreeSpec
 import chisel3.experimental.BundleLiterals._
 class toptest extends FreeSpec with ChiselScalatestTester{
 "Chisel Tester File toptest" in {
-    test(new top){  a=>
+    test(new topcore){  a=>
    
     a.clock.step(200)
     // a.io.output.expect(104.U)

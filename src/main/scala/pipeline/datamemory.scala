@@ -4,6 +4,7 @@ import chisel3.util._
 import chisel3.util.experimental.loadMemoryFromFile
 class datamemory extends Module {
   val io = IO(new Bundle {
+    
   val out = Output( Vec(4, UInt(8.W)) )
   val addr = Input(UInt(8.W)) // Changed the address width to 8 bits
   val rd_enable = Input(Bool())
@@ -27,5 +28,7 @@ class datamemory extends Module {
     io.out := memory.read(io.addr)
     // io.out := memory.read(io.addr, io.rd_enable)
   val dataIn = Input(Vec(4,UInt(8.W)))
+
   } 
+  
 }
