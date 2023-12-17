@@ -1,0 +1,12 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(testOnly pipeline.toptest, Some(8a5f6ae4-2ff5-4583-800a-76e9ee8c57c1), Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Test / testOnly[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /home/shehroz/5 stage pipielining processor/target/scala-2.12/classes ...[0m
+[0m[[0m[31merror[0m] [0m[0m/home/shehroz/5 stage pipielining processor/src/main/scala/pipeline/wb.scala:17:5: ')' expected but '.' found.[0m
+[0m[[0m[31merror[0m] [0m[0m  io.dataout:= Mux(io.ins(6,0)=== 3.U , io.datamemin,0.U)[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[31merror[0m] [0m[0mTotal time: 6 s, completed Dec 13, 2023, 5:08:41 PM[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0mForcing garbage collection...[0m

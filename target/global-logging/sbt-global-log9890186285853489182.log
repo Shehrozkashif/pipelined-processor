@@ -1,0 +1,12 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(testOnly pipeline.toptest, Some(59b1b6a5-6efd-4733-8561-72c728fcc6b3), Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Test / testOnly[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /home/shehroz/5 stage pipielining processor/target/scala-2.12/classes ...[0m
+[0m[[0m[31merror[0m] [0m[0m/home/shehroz/5 stage pipielining processor/src/main/scala/pipeline/wb.scala:18:9: value =: is not a member of chisel3.UInt[0m
+[0m[[0m[31merror[0m] [0m[0m  io.ins=:0.U[0m
+[0m[[0m[31merror[0m] [0m[0m        ^[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[31merror[0m] [0m[0mTotal time: 4 s, completed Dec 13, 2023, 10:28:00 PM[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m
+[0m[[0m[0minfo[0m] [0m[0mshutting down sbt server[0m

@@ -5,9 +5,8 @@ import chisel3.experimental.IO
 class topcore extends Module {
   
   val io = IO(new Bundle {
-    val addressout = Output(UInt(32.W))
-    val addressin = Input(UInt(32.W))
-    val immenable = Input(Bool())
+    val out = Output(UInt(32.W))
+   
 
 
   })
@@ -71,13 +70,18 @@ val decodemod = Module(new decode)
 
 decodemod.io.instructioncu  := fetchmod.io.insout
 
+// imem enable
+fetchmod.io.enable  := 1.B
 
+fetchmod.io.data_in := 0.U // Default data value of imem
 
 // decode and execute
 executemod.io.A:= decodemod.io.rdata1
 executemod.io.B:= decodemod.io.rdata2
+executemod.io.rdata1:= decodemod.io.rdata1
+executemod.io.rdata2:= decodemod.io.rdata2
 executemod.io.op:=decodemod.io.func3_7
-executemod.io.instructioncu:= decodemod.io.instructioncuout
+executemod.io.instructioncu:= decodemod.io.instructioncu  // default value for ins
 executemod.io.func3_7:= decodemod.io.func3_7
 executemod.io.immg:= decodemod.io.immg 
 executemod.io.pcout:= fetchmod.io.pcout      // have to pass this with 2 registers   // bringing pcout from fetch 
@@ -89,28 +93,54 @@ fetchmod.io.jump2:=executemod.io.pcjump2
 fetchmod.io.jump3:=executemod.io.pcjump3
 memmod.io.aluout:= executemod.io.addr
 
-memmod.io.dataIn:= decodemod.io.rdata2  
+ val myVector = Wire(Vec(4, UInt(8.W)))
+myVector(0):=decodemod.io.rdata2(7,0)
+myVector(1):=decodemod.io.rdata2(15,7)
+myVector(2):=decodemod.io.rdata2(23,15)
+myVector(3):=decodemod.io.rdata2(31,23)
 
+
+memmod.io.dataIn:=  myVector  
+
+//Default
+memmod.io.rd_enable  := 0.B
+memmod.io.wr_enable  := 0.B
+when(fetchmod.io.insout(6,0) === 3.U)
+{
+  memmod.io.rd_enable  := 1.B
+}.elsewhen(fetchmod.io.insout(6,0)=== "h23".U)
+{
+  memmod.io.rd_enable  := 1.B
+  memmod.io.wr_enable  := 1.B
+}
 memmod.io.instruction:= fetchmod.io.insout
 
 
 executemod.io.A:= memmod.io.A
 executemod.io.B:= memmod.io.B
 executemod.io.op:= memmod.io.op
+
 memmod.io.aluout:= executemod.io.aluout
-decodemod.io.immg:= memmod.io.imm
 
-decodemod.io.rdata1:= memmod.io.rdata1
+memmod.io.imm:=decodemod.io.immg 
 
-decodemod.io.rdata2:= memmod.io.rdata2
 
-decodemod.io.wdata:= memmod.io.wdata
+memmod.io.rdata1 := decodemod.io.rdata1 
+
+memmod.io.rdata2:= decodemod.io.rdata2 
+
+decodemod.io.wdata:= memmod.io.wdata //  assiging data memory output
 
 
   wbmod.io.ins  := fetchmod.io.insout
 
-decodemod.io.wdata:= wbmod.io.dataout
+decodemod.io.wdata:= wbmod.io.dataout // assigning write back output
 
-wbmod.io.datamemin:= memmod.io.dataout
+decodemod.io.wdata:= executemod.io.wdata  //  assinging alu output
+
+
+ wbmod.io.datamemin := Cat(memmod.io.dataout(3), memmod.io.dataout(2), memmod.io.dataout(1), memmod.io.dataout(0))
+
+io.out:= decodemod.io.wdata
 
 }

@@ -14,7 +14,7 @@ class mem extends Module {
    // val mask = Input ( Vec (4 , Bool () ) )  
    val dataIn = Input( Vec(4, UInt(8.W)) )   // from decode register file
    
-  val dataout = Output(UInt(32.W)) 
+  val dataout = Output( Vec(4, UInt(8.W)) )
     // control unit input/output cathcing 
 
      val instruction = Input(UInt(32.W))
@@ -40,9 +40,33 @@ class mem extends Module {
 
     
   })
+ io.A  := 0.U  // Default
+ io.B  := 0.U
+ io.op := 0.U
 
 // calling objects
 val dmmod =Module(new datamemory)
+
+dmmod.io.wr_enable:=false.B
+dmmod.io.addr:=0.U
+dmmod.io.rd_enable:=false.B
+
+io.wdata :=  io.aluout // need aluout to intialize wdata of registerfile
+
+dmmod.io.dataIn(0) := 0.U
+dmmod.io.dataIn(1) := 0.U
+dmmod.io.dataIn(2) := 0.U
+dmmod.io.dataIn(3) := 0.U
+
+// dmmod.io.mask(0) := 0.B
+// dmmod.io.mask(1) := 0.B
+// dmmod.io.mask(2) := 0.B
+// dmmod.io.mask(3) := 0.B
+
+
+
+
+
 // io.out := 0.U
 
 
@@ -54,11 +78,14 @@ val dmmod =Module(new datamemory)
 dmmod.io.rd_enable := io.rd_enable  // dmem read enable values
 dmmod.io.wr_enable:=io.wr_enable
 
-dmmod.io.mask(0) := 0.B
+dmmod.io.dataIn :=  io.dataIn
+
+dmmod.io.mask(0) := 0.B // default value of vector
 dmmod.io.mask(1) := 0.B
 dmmod.io.mask(2) := 0.B
 dmmod.io.mask(3) := 0.B
-dmmod.io.dataIn:=io.dataIn
+
+// dmmod.io.addr := 0.U
 
 
 
@@ -209,7 +236,7 @@ when(io.instruction(6,0) === "h23".U ){
   
 }
 
-io.wdata :=  io.aluout // need aluout to intialize wdata of registerfile
+
 
 // load type
 when(io.instruction(6,0) === "h3".U ){

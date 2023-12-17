@@ -18,3 +18,10 @@
 1701422320456:exit
 1701423256294:test Only pipeline.toptest
 1701423265333:testOnly pipeline.toptest
+1702552238477:test Only pipeline.toptest
+1702552255469:clear
+1702552258927:sbt
+1702552304066:testOnly pipeline.toptest
+1702552317043:test Only pipeline.toptest
+1702552319230:testOnly pipeline.toptest
+1702627145152:testOnly pipeline.toptest -- -DwriteVcd=1

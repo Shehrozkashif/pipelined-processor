@@ -13,8 +13,8 @@ class execute  extends Module {
     val out = Output(UInt(32.W)) // not wired
  
     // catching the outputs of registerfile, decode module
-    val rdata1 = Output ( UInt ( 32 . W ) ) //rs1 output
-    val rdata2 = Output ( UInt ( 32 . W ) ) //rs2 output
+    val rdata1 = Input ( UInt ( 32 . W ) ) //rs1 output
+    val rdata2 = Input ( UInt ( 32 . W ) ) //rs2 output
     // val wenout = Output( Bool () ) // wenable input
     // val waddr = Input ( UInt (5. W ) )  //rd
     val wdata = Output ( UInt ( 32 . W ) ) // rd data  giving register file data to write 
@@ -53,18 +53,25 @@ class execute  extends Module {
   })  
 
 
+
   // calling objects
 val alumod = Module(new alu)
+
+io.pcjump3 := 0.B // default value
+io.pcjump2 := 0.B // Default value
+io.pcjump  := 0.B
 
 
 
 // connections of execute module(alu) with decode module (register file) 
 
-alumod.io.A:=io.rdata1
-alumod.io.B:=io.rdata2
+alumod.io.A := io.rdata1 
+alumod.io.B := io.rdata2
 alumod.io.op:=io.func3_7
 io.out   := alumod.io.out    // from alu to execute module
 
+io.wdata :=   alumod.io.out  // Default value for wdata
+io.aluout := alumod.io.out      // branch address to pc (default value)
 // when load and store 
 io.addr := 0.U // default
 when(io.instructioncu(6,0) === 3.U)

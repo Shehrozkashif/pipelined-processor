@@ -1,4 +1,4 @@
-[0m[[0m[31merror[0m] [0m[0m/home/shehroz/5 stage pipielining processor/src/main/scala/pipeline/top.scala:46:10: value rs1data is not a member of chisel3.Bundle{val imm: chisel3.UInt; val out: chisel3.UInt; val jump: chisel3.Bool; val jump2: chisel3.Bool; val jump3: chisel3.Bool}[0m
-[0m[[0m[31merror[0m] [0m[0mpcmod.io.rs1data := regfmod.io.rdata1[0m
-[0m[[0m[31merror[0m] [0m[0m         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/shehroz/5 stage pipielining processor/src/main/scala/pipeline/topcore.scala:84:44: value instructioncuout is not a member of chisel3.Bundle{val rdata1: chisel3.UInt; val rdata2: chisel3.UInt; val wdata: chisel3.UInt; val instructioncu: chisel3.UInt; val func3_7: chisel3.UInt; val en_imem: chisel3.Bool; val immg: chisel3.UInt}[0m
+[0m[[0m[31merror[0m] [0m[0mexecutemod.io.instructioncu:= decodemod.io.instructioncuout[0m
+[0m[[0m[31merror[0m] [0m[0m                                           ^[0m
 [0m[[0m[31merror[0m] [0m[0mone error found[0m

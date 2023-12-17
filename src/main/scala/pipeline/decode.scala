@@ -16,7 +16,7 @@ val rdata2 = Output ( UInt ( 32 . W ) ) //rs2 output
 val wdata = Input ( UInt ( 32 . W ) ) // rd data   
 //control unit connections 
 val instructioncu = Input(UInt(32.W))    // instruction comming from imem
-val instructioncuout = Output(UInt(32.W))  // for execute
+// val instructioncuout = Output(UInt(32.W))  // for execute
 
 val func3_7 = Output(UInt(4.W))          //
 val en_imem = Output(Bool())  // imem enable
@@ -34,6 +34,11 @@ val immg = Output(UInt(32.W))      // output of immediate generation
  
 
   } )
+// io.wdata:=0.U
+// io.instructioncu:=0.U
+
+
+
 
 // calling objects
 val cumod = Module(new controlunit)
@@ -49,8 +54,9 @@ regfmod.io.waddr := cumod.io.rd       // assigning write address to register fil
 
 // decode module connection with  controlunit
 cumod.io.instruction:=io.instructioncu
-cumod.io.func3_7:=io.func3_7
-cumod.io.en_imem:=io.en_imem
+io.func3_7:=cumod.io.func3_7
+io.en_imem :=cumod.io.en_imem
+
 // cumod.io.rd:=io.rd
 // cumod.io.rs2:=io.rs2
 // cumod.io.rs1:=io.rs1
@@ -65,7 +71,7 @@ regfmod.io.wen:=cumod.io.en_reg
 // regfmod.io.waddr:=cumod.io.rd
 regfmod.io.wdata:= io.wdata
 
-regfmod.io.wen := cumod.io.en_reg
+
 
 // decode module connections with immdiate generator 
 

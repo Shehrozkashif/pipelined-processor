@@ -12,7 +12,7 @@ val io = IO (new Bundle {
 })
 val memory = Mem(256, UInt(32.W))
 
-loadMemoryFromFile(memory,"/home/shehroz/Scala-Chisel-Learning-Journey/src/main/scala/singlecycle/inst_file.txt")
+loadMemoryFromFile(memory,"/home/shehroz/5 stage pipielining processor/src/main/scala/pipeline/inst_file.txt")
 
 when ( io.enable ) {
 memory.write( io.address >> 2 , io.data_in  )

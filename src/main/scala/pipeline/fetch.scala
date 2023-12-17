@@ -22,7 +22,13 @@ val io = IO(new Bundle{
   // val address= Input(UInt(32.W))
   val insout= Output(UInt(32.W))
 
-  } )
+  })
+
+
+
+
+
+
 // calling ojects here
 
 val pcmod = Module(new pc)
@@ -50,8 +56,5 @@ inmmod.io.address:= pcmod.io.out   // giving address to imem from pc
 
 // inmmod.io.out:=io.insout
 io.insout  := inmmod.io.out        // taking whole instruction from imem
-
-
-
 
 }

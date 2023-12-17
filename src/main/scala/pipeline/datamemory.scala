@@ -12,11 +12,12 @@ class datamemory extends Module {
   val mask = Input ( Vec (4 , Bool () ) )
     val dataIn = Input( Vec(4, UInt(8.W)) )
   })
+
   io.out(0) := 0.U
   io.out(1) := 0.U
   io.out(2) := 0.U
   io.out(3) := 0.U
-  
+ 
 
   val memory = Mem(256, Vec(4,UInt(8.W)) )
 
@@ -27,7 +28,7 @@ class datamemory extends Module {
   when(io.rd_enable) {
     io.out := memory.read(io.addr)
     // io.out := memory.read(io.addr, io.rd_enable)
-  val dataIn = Input(Vec(4,UInt(8.W)))
+  
 
   } 
   
