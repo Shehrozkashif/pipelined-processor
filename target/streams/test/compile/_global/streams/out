@@ -1,4 +1,4 @@
-[0m[[0m[31merror[0m] [0m[0m/home/shehroz/5 stage pipielining processor/src/test/scala/pipeline_test/toptest.scala:8:14: not found: type top[0m
-[0m[[0m[31merror[0m] [0m[0m    test(new top){  a=>[0m
+[0m[[0m[31merror[0m] [0m[0m/home/shehroz/5 stage pipielining processor/src/test/scala/pipeline/toptest.scala:8:14: not found: type topmain[0m
+[0m[[0m[31merror[0m] [0m[0m    test(new topmain){  a=>[0m
 [0m[[0m[31merror[0m] [0m[0m             ^[0m
 [0m[[0m[31merror[0m] [0m[0mone error found[0m

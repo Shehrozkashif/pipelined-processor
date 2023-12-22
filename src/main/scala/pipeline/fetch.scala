@@ -17,10 +17,10 @@ val io = IO(new Bundle{
 
 // instruction memory input/outputs 
 
-  val data_in= Input(UInt(32.W))
-  val enable = Input(Bool())
+  // val data_in= Input(UInt(32.W))
+  // val enable = Input(Bool())
   // val address= Input(UInt(32.W))
-  val insout= Output(UInt(32.W))
+  // val insout= Output(UInt(32.W))
 
   })
 
@@ -32,11 +32,11 @@ val io = IO(new Bundle{
 // calling ojects here
 
 val pcmod = Module(new pc)
-val inmmod = Module(new Imem)
+
 
 // pc and instruction memory conections
 
-inmmod.io.address:= pcmod.io.out    // giving address to imem from pc
+// inmmod.io.address:= pcmod.io.out    // giving address to imem from pc
 
 
 // pc connections 
@@ -50,11 +50,11 @@ io.pcout := pcmod.io.out   // Output of pc
 
 // instruction memeory conections 
 
-inmmod.io.data_in:= io.data_in     // 
-inmmod.io.enable:=io.enable        // enabling imem 
-inmmod.io.address:= pcmod.io.out   // giving address to imem from pc
+// inmmod.io.data_in:= io.data_in     // 
+// inmmod.io.enable:=io.enable        // enabling imem 
+// inmmod.io.address:= pcmod.io.out   // giving address to imem from pc
 
 // inmmod.io.out:=io.insout
-io.insout  := inmmod.io.out        // taking whole instruction from imem
+// io.insout  := inmmod.io.out        // taking whole instruction from imem
 
 }

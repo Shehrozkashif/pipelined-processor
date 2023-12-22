@@ -1,0 +1,23 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(testOnly pipeline.toptest -- -DwriteVcd=1, Some(5ab1dabe-0462-4e8c-b73c-8b811b3949e2), Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Test / testOnly[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 2 Scala sources to /home/shehroz/5 stage pipielining processor/target/scala-2.12/classes ...[0m
+[0m[[0m[31merror[0m] [0m[0m/home/shehroz/5 stage pipielining processor/src/main/scala/pipeline/mem.scala:47:4: value wr_enable is not a member of chisel3.Bundle{val addr: chisel3.UInt; val mask: chisel3.Vec[chisel3.Bool]; val dataIn: chisel3.Vec[chisel3.UInt]; val out: chisel3.Vec[chisel3.UInt]; val instruction: chisel3.UInt; val A: chisel3.UInt; val B: chisel3.UInt; val op: chisel3.UInt; val aluout: chisel3.UInt; val imm: chisel3.UInt; val rdata1: chisel3.UInt; val rdata2: chisel3.UInt; val wdata: chisel3.UInt}[0m
+[0m[[0m[31merror[0m] [0m[0mio.wr_enable:=false.B[0m
+[0m[[0m[31merror[0m] [0m[0m   ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/shehroz/5 stage pipielining processor/src/main/scala/pipeline/mem.scala:70:4: value wr_enable is not a member of chisel3.Bundle{val addr: chisel3.UInt; val mask: chisel3.Vec[chisel3.Bool]; val dataIn: chisel3.Vec[chisel3.UInt]; val out: chisel3.Vec[chisel3.UInt]; val instruction: chisel3.UInt; val A: chisel3.UInt; val B: chisel3.UInt; val op: chisel3.UInt; val aluout: chisel3.UInt; val imm: chisel3.UInt; val rdata1: chisel3.UInt; val rdata2: chisel3.UInt; val wdata: chisel3.UInt}[0m
+[0m[[0m[31merror[0m] [0m[0mio.wr_enable:=io.wr_enable[0m
+[0m[[0m[31merror[0m] [0m[0m   ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/shehroz/5 stage pipielining processor/src/main/scala/pipeline/mem.scala:70:18: value wr_enable is not a member of chisel3.Bundle{val addr: chisel3.UInt; val mask: chisel3.Vec[chisel3.Bool]; val dataIn: chisel3.Vec[chisel3.UInt]; val out: chisel3.Vec[chisel3.UInt]; val instruction: chisel3.UInt; val A: chisel3.UInt; val B: chisel3.UInt; val op: chisel3.UInt; val aluout: chisel3.UInt; val imm: chisel3.UInt; val rdata1: chisel3.UInt; val rdata2: chisel3.UInt; val wdata: chisel3.UInt}[0m
+[0m[[0m[31merror[0m] [0m[0mio.wr_enable:=io.wr_enable[0m
+[0m[[0m[31merror[0m] [0m[0m                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/shehroz/5 stage pipielining processor/src/main/scala/pipeline/mem.scala:84:4: value wr_enable is not a member of chisel3.Bundle{val addr: chisel3.UInt; val mask: chisel3.Vec[chisel3.Bool]; val dataIn: chisel3.Vec[chisel3.UInt]; val out: chisel3.Vec[chisel3.UInt]; val instruction: chisel3.UInt; val A: chisel3.UInt; val B: chisel3.UInt; val op: chisel3.UInt; val aluout: chisel3.UInt; val imm: chisel3.UInt; val rdata1: chisel3.UInt; val rdata2: chisel3.UInt; val wdata: chisel3.UInt}[0m
+[0m[[0m[31merror[0m] [0m[0mio.wr_enable := 0.B[0m
+[0m[[0m[31merror[0m] [0m[0m   ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/shehroz/5 stage pipielining processor/src/main/scala/pipeline/mem.scala:90:6: value wr_enable is not a member of chisel3.Bundle{val addr: chisel3.UInt; val mask: chisel3.Vec[chisel3.Bool]; val dataIn: chisel3.Vec[chisel3.UInt]; val out: chisel3.Vec[chisel3.UInt]; val instruction: chisel3.UInt; val A: chisel3.UInt; val B: chisel3.UInt; val op: chisel3.UInt; val aluout: chisel3.UInt; val imm: chisel3.UInt; val rdata1: chisel3.UInt; val rdata2: chisel3.UInt; val wdata: chisel3.UInt}[0m
+[0m[[0m[31merror[0m] [0m[0m  io.wr_enable := 1.B[0m
+[0m[[0m[31merror[0m] [0m[0m     ^[0m
+[0m[[0m[31merror[0m] [0m[0m5 errors found[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[31merror[0m] [0m[0mTotal time: 1 s, completed Dec 21, 2023, 1:15:13 PM[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m

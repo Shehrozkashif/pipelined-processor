@@ -9,6 +9,7 @@ val io = IO (new Bundle {
  val enable = Input(Bool())
   val address= Input(UInt(32.W))
   val out= Output(UInt(32.W))
+  
 })
 val memory = Mem(256, UInt(32.W))
 

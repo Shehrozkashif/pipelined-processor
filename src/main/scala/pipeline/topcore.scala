@@ -5,11 +5,26 @@ import chisel3.experimental.IO
 class topcore extends Module {
   
   val io = IO(new Bundle {
-    val out = Output(UInt(32.W))
-   
+  // instruction memory   
+//  val data_in= Input(UInt(32.W))
+    val enable = Output(Bool())
+    val address= Output(UInt(32.W))
+    val instruction_input= Input(UInt(32.W)) // getting instruction from instruction memory
+    // val out= Output(UInt(32.W))
 
+// data memory
+
+  val addr = Output(UInt(8.W)) // Changed the address width to 8 bits
+  val rd_enable = Output(Bool())
+  val wr_enable = Output(Bool())
+  val mask = Output( Vec (4 , Bool() ))
+  val dataIn = Output( Vec(4, UInt(8.W)) )
+  val datamemout= Input(Vec(4, UInt(32.W))) // for topmain
+
+   val pcout= Output(UInt(32.W)) // for topmain
 
   })
+  
 
   // calling objects 
 val fetchmod = Module(new fetch)
@@ -17,6 +32,7 @@ val fetchmod = Module(new fetch)
 val executemod = Module(new execute)
 
 val wbmod =Module(new wb) 
+dontTouch(wbmod.io)
 
 val memmod = Module(new mem)
 
@@ -68,12 +84,15 @@ val decodemod = Module(new decode)
 
 // connections of fetch and decode  
 
-decodemod.io.instructioncu  := fetchmod.io.insout
+
 
 // imem enable
-fetchmod.io.enable  := 1.B
+io.enable  := 0.B
 
-fetchmod.io.data_in := 0.U // Default data value of imem
+io.address := fetchmod.io.pcout
+
+// fetchmod.io.data_in := 0.U // Default data value of imem
+decodemod.io.instructioncu  := io.instruction_input
 
 // decode and execute
 executemod.io.A:= decodemod.io.rdata1
@@ -93,27 +112,29 @@ fetchmod.io.jump2:=executemod.io.pcjump2
 fetchmod.io.jump3:=executemod.io.pcjump3
 memmod.io.aluout:= executemod.io.addr
 
- val myVector = Wire(Vec(4, UInt(8.W)))
-myVector(0):=decodemod.io.rdata2(7,0)
-myVector(1):=decodemod.io.rdata2(15,7)
-myVector(2):=decodemod.io.rdata2(23,15)
-myVector(3):=decodemod.io.rdata2(31,23)
+//  val myVector = Wire(Vec(4, UInt(8.W)))
+// memmod.io.dataIn(0):=decodemod.io.rdata2(7,0)
+// memmod.io.dataIn(1):=decodemod.io.rdata2(15,8)
+// memmod.io.dataIn(2):=decodemod.io.rdata2(23,16)
+// memmod.io.dataIn(3):=decodemod.io.rdata2(31,24)
 
 
-memmod.io.dataIn:=  myVector  
+// memmod.io.dataIn:=  decodemod.io.rdata2 
 
-//Default
-memmod.io.rd_enable  := 0.B
-memmod.io.wr_enable  := 0.B
-when(fetchmod.io.insout(6,0) === 3.U)
+// Cannot assign value to outer module
+io.rd_enable  := 0.B
+io.wr_enable  := 0.B
+when(io.instruction_input(6,0) === 3.U)
 {
-  memmod.io.rd_enable  := 1.B
-}.elsewhen(fetchmod.io.insout(6,0)=== "h23".U)
+  io.rd_enable  := 1.B
+} .elsewhen(io.instruction_input(6,0)=== "h23".U)
 {
-  memmod.io.rd_enable  := 1.B
-  memmod.io.wr_enable  := 1.B
+  io.wr_enable  := 1.B
 }
-memmod.io.instruction:= fetchmod.io.insout
+
+memmod.io.instruction:= io.instruction_input   // Full instruct from topmain imem
+
+memmod.io.out := io.datamemout   // input comming from data memory output of maintop
 
 
 executemod.io.A:= memmod.io.A
@@ -132,15 +153,30 @@ memmod.io.rdata2:= decodemod.io.rdata2
 decodemod.io.wdata:= memmod.io.wdata //  assiging data memory output
 
 
-  wbmod.io.ins  := fetchmod.io.insout
+  wbmod.io.ins  := io.instruction_input
 
-decodemod.io.wdata:= wbmod.io.dataout // assigning write back output
+decodemod.io.wdata:= Mux(io.instruction_input(6,0)==="b0000011".asUInt,wbmod.io.dataout,executemod.io.wdata) // assigning write back output
 
-decodemod.io.wdata:= executemod.io.wdata  //  assinging alu output
+// decodemod.io.wdata:= executemod.io.wdata  //  assinging alu output
 
 
- wbmod.io.datamemin := Cat(memmod.io.dataout(3), memmod.io.dataout(2), memmod.io.dataout(1), memmod.io.dataout(0))
+ wbmod.io.datamemin := Cat(io.datamemout(3), io.datamemout(2),io.datamemout(1),io.datamemout(0))
 
-io.out:= decodemod.io.wdata
+// io.out:= decodemod.io.wdata
+
+io.pcout:= fetchmod.io.pcout // giving pcout to instruction memory 
+
+decodemod.io.instructioncu  := io.instruction_input
+
+
+// connecting mem to datamemory through topcore
+
+io.addr:= memmod.io.addr
+// io.wr_enable:=memmod.io.wr_enable
+// io.rd_enable:=memmod.io.rd_enable
+io.mask:=memmod.io.mask
+io.dataIn:=memmod.io.dataIn
+// io.dataout:=io.datamemout // taking datamemory output
+
 
 }
